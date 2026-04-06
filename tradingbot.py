@@ -1,4 +1,4 @@
-price = 61000
+price = 58000
 
 if price < 60000:
     print("Buy BTC")
