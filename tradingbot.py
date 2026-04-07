@@ -7,7 +7,7 @@ coin ="BTC"
 price = 65000
 
 if price == 60000:
-    print('Perfect Entry')
+    st.write('Perfect Entry')
 elif price < 60000:    
     print('BUY',coin,'at price',price)
 elif price > 65000:
