@@ -1,12 +1,14 @@
 coin ="BTC"
-price = 64000
+price = 61000
 
-if price <60000:
-    print('Buy',coin)
-elif price >65000:
-    print('Sell',coin)
+if price < 60000:
+    print('BUY',coin,'at price',price)
+elif price > 65000:
+    print('Sell',coin,'at price', price)
+elif price == 60000:
+    print('Perfect Entry')
 else:
-    print('Wait')
+    print('Wait - current price', price)
 
     
 
