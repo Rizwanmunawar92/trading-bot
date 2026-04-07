@@ -1,11 +1,12 @@
-price = 65500
+coin ="BTC"
+price = 64000
 
 if price <60000:
-    print('Buy BTC at price:','$',price)
+    print('Buy',coin)
 elif price >65000:
-    print('Sell BTC at price:','$',price)
+    print('Sell',coin)
 else:
-    print('Wait, current price:','$',price)
+    print('Wait')
 
     
 
