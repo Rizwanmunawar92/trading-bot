@@ -4,10 +4,10 @@ st.title("My First App")
 st.write("Hello Rizwan!")
 
 coin ="BTC"
-price = 65000
+price = 60000
 
 if price == 60000:
-    st.write('Perfect Entry')
+    st.write(f"Perfect Entry")
 elif price < 60000:    
     print('BUY',coin,'at price',price)
 elif price > 65000:
