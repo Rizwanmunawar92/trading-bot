@@ -4,7 +4,7 @@ st.title("My First App")
 st.write("Hello Rizwan!")
 
 coin ="BTC"
-price = 60000
+price = 59000
 
 if price == 60000:
     st.write("Perfect Entry:",price)
