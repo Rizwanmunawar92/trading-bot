@@ -7,13 +7,13 @@ coin ="BTC"
 price = 60000
 
 if price == 60000:
-    st.write("Price is:",price)
+    st.write("Perfect Entry:",price)
 elif price < 60000:    
-    print('BUY',coin,'at price',price)
+    st.write('BUY',coin,'at price',price)
 elif price > 65000:
-    print('Sell',coin,'at price', price)   
+    st.write('Sell',coin,'at price', price)   
 else:
-    print('Wait - current price', price)
+    st.write('Wait - current price', price)
 
 
     
