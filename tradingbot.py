@@ -9,7 +9,7 @@ coin = "BTC"
 price = 65000
 
 while True:
-    print("price :",price)
+    print("price :",price,time.ctime()) # time.ctime used to print readable time on the terminal
     
     if price < 60000:
         print("Buy", price)
