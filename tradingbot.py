@@ -6,19 +6,26 @@ st.write("Hello Rizwan!")
 import time
 
 coin = "BTC"
-price= 65000
+price = 65000
 
 while True:
-    print("Price:",price)
-
-    if price > 65000:
-        print("SELL")
-    elif price <60000:
-        print("BUY")
+    print("price :",price)
+    
+    if price < 60000:
+        print("Buy", price)
+    elif price > 65000:
+        print("SELL:",price)
     else:
         print("WAIT")
 
-    price = price - 100 #simulate price change
+    price += 200 #will simulate price
+
+    if price >= 66000:
+        print("Stopping loop - Target reached")
+        break
+
+
     time.sleep(2)
+
     
 
