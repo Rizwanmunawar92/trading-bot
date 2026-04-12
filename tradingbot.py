@@ -17,7 +17,7 @@ def trading_decision(price):
     else:
         return "WAIT"
 
-price =st.number_input("Enter BTC Price", Value = 58000)
+price =st.number_input("Enter BTC Price", value = 58000)
 
 st.write(f"Price: {price} | Time: {time.ctime()}")
 
@@ -28,7 +28,7 @@ if st.button("Increase Price"):
     price +=200
     st.write(f"New Price: {price}")
     st.write(f" Decision: {decision}")
-    
+
 
 ''' Day 2 Code for terminal use'''
 '''import streamlit as st
@@ -68,7 +68,7 @@ while True:
         # Code add below is to practice use coin name and price in the defined funtion. '''
     
     
-    '''import time
+'''import time
     def trading_decision(coin, price):
     print(f"{coin} price: {price}")
     if price == 60000:
