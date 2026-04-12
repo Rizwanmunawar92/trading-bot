@@ -1,4 +1,37 @@
+''' Day 2 Code Stream lit version'''
+
 import streamlit as st
+
+st.title("My Frist App ")
+st.write("Welcome Rizwan")
+
+import time
+
+def trading_decision(price): 
+    if price == 60000:
+        return "Perfect Entry"
+    elif price < 60000:
+        return "BUY"
+    elif price > 65000:
+        return "SELL"
+    else:
+        return "WAIT"
+
+price =st.number_input("Enter BTC Price", Value = 58000)
+
+st.write(f"Price: {price} | Time: {time.ctime()}")
+
+decision = trading_decision(price)
+st.write (f"Decision: {decision}")
+
+if st.button("Increase Price"):
+    price +=200
+    st.write(f"New Price: {price}")
+    st.write(f" Decision: {decision}")
+    
+
+''' Day 2 Code for terminal use'''
+'''import streamlit as st
 
 st.title("My First App")
 st.write("Hello Rizwan!")
@@ -32,7 +65,8 @@ while True:
 
 
 
-        # Code add below is to practice use coin name and price in the defined funtion. 
+        # Code add below is to practice use coin name and price in the defined funtion. '''
+    
     
     '''import time
     def trading_decision(coin, price):
