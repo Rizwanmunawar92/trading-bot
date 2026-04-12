@@ -1,30 +1,28 @@
-''' Day 2 Code Stream lit version'''
-
-import streamlit as st
-
-st.title("My Frist App ")
-st.write("Welcome Rizwan")
-
 import time
 
-def trading_decision(price): 
+def trading_decision(price):
     if price == 60000:
-        return "Perfect Entry"
+        return "PERFECT ENTRY"
     elif price < 60000:
         return "BUY"
     elif price > 65000:
         return "SELL"
+
     else:
         return "WAIT"
 
-price =st.number_input("Enter BTC Price", value = 58000)
+# take input from user
+price=float(input("Enter BTC Price:"))
 
-st.write(f"Price: {price} | Time: {time.ctime()}")
+while True:
+    print (f"BTC Price:{price} | TIME: {time.ctime()}")
+    decision = trading_decision(price)
+    print(f"Decision: {decision}")
 
-decision = trading_decision(price)
-st.write (f"Decision: {decision}")
+    price += 300
 
-if st.button("Increase Price"):
-    price +=200
-    st.write(f"New Price: {price}")
-    st.write(f" Decision: {decision}")
+    if price >= 67000:
+        print("Stopping loop - Target reached")
+        break
+
+    time.sleep(2)
