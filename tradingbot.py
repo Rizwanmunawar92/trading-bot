@@ -65,8 +65,8 @@ while True:
 
 
 
-        # Code add below is to practice use coin name and price in the defined funtion. '''
-    
+        # Code add below is to practice use coin name and price in the defined funtion.
+    '''
     
 '''import time
     def trading_decision(coin, price):
